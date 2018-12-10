@@ -99,3 +99,5 @@ D:\hockicuoi2018\Thayphuc\baocao\QuanLiThueXe\QuanLiThueXe\obj\Debug\QuanLiThueX
 D:\hockicuoi2018\Thayphuc\baocao\QuanLiThueXe\QuanLiThueXe\obj\Debug\QuanLiThueXe.csproj.CopyComplete
 D:\hockicuoi2018\Thayphuc\baocao\QuanLiThueXe\QuanLiThueXe\obj\Debug\QuanLiThueXe.dll
 D:\hockicuoi2018\Thayphuc\baocao\QuanLiThueXe\QuanLiThueXe\obj\Debug\QuanLiThueXe.pdb
+C:\Users\hacke\Desktop\baocao\QuanLiThueXe\obj\Debug\QuanLiThueXe.csprojAssemblyReference.cache
+C:\Users\hacke\Desktop\baocao\QuanLiThueXe\obj\Debug\QuanLiThueXe.csproj.CoreCompileInputs.cache
