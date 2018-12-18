@@ -17,6 +17,33 @@
         <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="form-group">
+                                    <asp:DropDownList CssClass="form-control" ID="CheckTrangThai" runat="server">
+                                    <asp:ListItem>Tất Cả</asp:ListItem>
+                                    <asp:ListItem>Đã Thanh Toán</asp:ListItem>
+                                    <asp:ListItem>Đang Thuê</asp:ListItem>
+                                </asp:DropDownList>
+                                    
+                                </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <asp:Button ID="btnLoc" runat="server" Text="Lọc" CssClass="btn btn-info btn-sm" OnClick="btnLoc_Click" />
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="table-responsive table--no-card m-b-30">
+                                    <asp:GridView DataKeyNames="SoDDT" CssClass="table table-borderless table-striped table-earning" ID="GridView1" runat="server" >
+                                       
+                                    </asp:GridView>
+                                   
+                                </div>
+                            </div>
+                        </div>
                          <div class="row">
                             <div class="col-sm-12 col-lg-6">
                                 <div class="card">
@@ -28,25 +55,23 @@
                                             <div class="col-md-12 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="city" class=" form-control-label">Chọn Xe:</label>
-                                                    <asp:DropDownList ID="DropXe" CssClass="form-control" runat="server" DataSourceID="LinqDataSource1" DataTextField="BangSo" DataValueField="MaXE"></asp:DropDownList>
-                                                    <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="QuanLiThueXe.HideClassDataContext" EntityTypeName="" TableName="CHITIETXEs">
-                                                    </asp:LinqDataSource>
+                                                    <asp:DropDownList ID="DropXe" CssClass="form-control" runat="server" ></asp:DropDownList>
+                                                    
+                                                   
                                                 </div>
                                             </div>
                                             <div class="col-md-12 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="city" class=" form-control-label">Nhân viên lập hợp đồng:</label>
-                                                    <asp:DropDownList ID="Dropnhanvien" CssClass="form-control" runat="server" DataSourceID="LinqDataSource2" DataTextField="HoTen" DataValueField="MaNV"></asp:DropDownList>
-                                                    <asp:LinqDataSource ID="LinqDataSource2" runat="server" ContextTypeName="QuanLiThueXe.HideClassDataContext" EntityTypeName="" TableName="NHANVIENs">
-                                                    </asp:LinqDataSource>
+                                                    <asp:DropDownList ID="Dropnhanvien" CssClass="form-control" runat="server"></asp:DropDownList>
+                                                    
                                                 </div>
                                             </div>
                                             <div class="col-md-12 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="city" class=" form-control-label">Chọn khách hàng:</label>
-                                                    <asp:DropDownList ID="dropkhachhang" CssClass="form-control" runat="server" DataSourceID="LinqDataSource3" DataTextField="HoTen" DataValueField="MaKH"></asp:DropDownList>
-                                                    <asp:LinqDataSource ID="LinqDataSource3" runat="server" ContextTypeName="QuanLiThueXe.HideClassDataContext" EntityTypeName="" TableName="KHACHHANGs">
-                                                    </asp:LinqDataSource>
+                                                    <asp:DropDownList ID="dropkhachhang" CssClass="form-control" runat="server" ></asp:DropDownList>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -57,39 +82,7 @@
                                     
                                 </div>
                             </div>
-                          <%--  <div class="col-sm-12 col-lg-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        
-                                    </div>
-                                    <div class="card-body card-block">
-                                        <div class="row form-group">
-                                            <div class="col-md-12 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="city" class=" form-control-label">Giá thuê: </label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon">
-                                                            <i class="fas fa-money-bill"></i>
-                                                        </div>
-                                                        <asp:TextBox ID="txtgiathue" CssClass="form-control" TextMode="Number" runat="server"></asp:TextBox>
-                                                        <div class="input-group-addon">.00</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="city" class=" form-control-label">Mức giảm giá:</label>
-                                                    <div class="input-group">
-                                                        
-                                                        <asp:TextBox ID="txtmucgiamgia" CssClass="form-control" TextMode="Number" runat="server"></asp:TextBox>
-                                                        <div class="input-group-addon">%</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>--%>
+               
                             <div class="col-sm-12 col-lg-6">
                                 <div class="card">
                                     <div class="card-header">
@@ -115,21 +108,12 @@
                                        
                                         <asp:Button ID="btnnhap" runat="server" Text="Nhập" CssClass="btn btn-primary btn-sm" OnClick="btnnhap_Click" />
                                         
-                                        <asp:Button ID="btnReset" runat="server" Text="Reset" CssClass="btn btn-danger btn-sm" />
+                                       
                                     </div>
                                 </div>
                             </div>
                         </div> 
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="table-responsive table--no-card m-b-30">
-                                    <asp:GridView DataKeyNames="SoDDT" CssClass="table table-borderless table-striped table-earning" ID="GridView1" runat="server" >
-                                       
-                                    </asp:GridView>
-                                   
-                                </div>
-                            </div>
-                        </div>
+                      
                                 
                         <div class="row">
                             <div class="col-md-12">

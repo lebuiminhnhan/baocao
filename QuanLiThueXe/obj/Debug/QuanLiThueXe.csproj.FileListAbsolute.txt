@@ -94,7 +94,6 @@ D:\hockicuoi2018\baocao\QuanLiThueXe\bin\Newtonsoft.Json.xml
 D:\hockicuoi2018\baocao\QuanLiThueXe\bin\Antlr3.Runtime.pdb
 D:\hockicuoi2018\baocao\QuanLiThueXe\bin\Microsoft.AspNet.FriendlyUrls.xml
 D:\hockicuoi2018\baocao\QuanLiThueXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\hockicuoi2018\baocao\QuanLiThueXe\obj\Debug\QuanLiThueXe.csprojAssemblyReference.cache
 D:\hockicuoi2018\baocao\QuanLiThueXe\obj\Debug\QuanLiThueXe.csproj.CoreCompileInputs.cache
 D:\hockicuoi2018\baocao\QuanLiThueXe\obj\Debug\QuanLiThueXe.csproj.CopyComplete
 D:\hockicuoi2018\baocao\QuanLiThueXe\obj\Debug\QuanLiThueXe.dll
