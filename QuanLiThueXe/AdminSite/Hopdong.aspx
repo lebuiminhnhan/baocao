@@ -115,6 +115,7 @@
                                        
                                         <asp:Button ID="btnnhap" runat="server" Text="Nhập" CssClass="btn btn-primary btn-sm" OnClick="btnnhap_Click" />
                                         
+                                        <asp:Button ID="btnReset" runat="server" Text="Reset" CssClass="btn btn-danger btn-sm" />
                                     </div>
                                 </div>
                             </div>
